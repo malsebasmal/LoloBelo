@@ -1,2 +1,3 @@
 # LoloBelo
-LoloBelo pizzas website.
+Technologies:
+Astro
