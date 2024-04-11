@@ -1,0 +1,158 @@
+---
+import LayoutIndex from "../layouts/LayoutIndex.astro";
+import LayoutCards from "../layouts/LayoutCards.astro";
+import CardMenu from "../components/CardMenu.astro";
+---
+
+<LayoutIndex title="Menu LoloBelo">
+  <main>
+    <LayoutCards>
+      <!-- Recomending Section -->
+      <CardMenu
+        slot="recommending"
+        title="Suprema"
+        price="18.00"
+        price="35.00"
+        route="/src/assets/pizzas/pizzamaericana.jpg"
+        altImg="Suprema"
+        description="Queso Mozarella, Salsa, Jamón, Pepperoni, Champiñones, Cebolla Blanca, Trozos de Carne."
+      />
+      <CardMenu
+        slot="recommending"
+        title="La Continental"
+        price="18.00"
+        price="35.00"
+        route="/src/assets/pizzas/pizzamaericana.jpg"
+        altImg="LaContinental"
+        description="Queso Mozarella, Salsa, Jamón, Salame, Tiritas de Tocino, Carne, Queso Doble."
+      />
+      <CardMenu
+        slot="recommending"
+        title="Full Cabanossi"
+        price="16.00"
+        price="32.00"
+        route="/src/assets/pizzas/pizzamaericana.jpg"
+        altImg="FullCabanossi"
+        description="Queso Mozarella, Salsa, Jamón, Lomito Ahumado, Palitos de Cabanossi."
+      />
+      <CardMenu
+        slot="recommending"
+        title="De La Casa"
+        price="18.00"
+        price="35.00"
+        route="/src/assets/pizzas/pizzamaericana.jpg"
+        altImg="DeLaCasa"
+        description="Queso Mozarella, Salsa, Jamón, Salame, Pepperoni, Lomito Ahumado, Queso Doble."
+      />
+      <CardMenu
+        slot="recommending"
+        title="Tradicional De Pollo"
+        price="16.00"
+        price="32.00"
+        route="/src/assets/pizzas/pizzamaericana.jpg"
+        altImg="TradicionalDePollo"
+        description="Queso Mozarella, Salsa, Jamón, Tocino, Pollo, Desmenuzado, Queso Doble."
+      />
+
+      <!-- Classic Section -->
+      <CardMenu
+        slot="classic"
+        title="Pepperoni"
+        price="14.00"
+        price="26.00"
+        route="/src/assets/pizzas/pizzamaericana.jpg"
+        altImg="Pepperoni"
+        description="Queso Mozarella, Salsa, Rodajas de Pepperoni."
+      />
+      <CardMenu
+        slot="classic"
+        title="La Perucha"
+        price="14.00"
+        price="25.00"
+        route="/src/assets/pizzas/pizzamaericana.jpg"
+        altImg="LaPerucha"
+        description="Queso Mozarella, Salsa, Hot Dog Ahumado."
+      />
+      <CardMenu
+        slot="classic"
+        title="Americana Especial"
+        price="14.00"
+        price="25.00"
+        route="/src/assets/pizzas/pizzamaericana.jpg"
+        altImg="AmericanaEspecial"
+        description="Queso Mozarella, Salsa, Jamón Inglés."
+      />
+      <CardMenu
+        slot="classic"
+        title="Italiana"
+        price="14.00"
+        price="25.00"
+        route="/src/assets/pizzas/pizzamaericana.jpg"
+        altImg="Italiana"
+        description="Queso Mozarella, Salsa, Salame."
+      />
+
+      <!-- Specials Section -->
+      <CardMenu
+        slot="specials"
+        title="Brasilera"
+        price="16.00"
+        price="32.00"
+        route="/src/assets/pizzas/pizzamaericana.jpg"
+        altImg="Brasilera"
+        description="Queso Mozarella, Salsa, Jamón, Lomito Ahumado, Tiritas de Tocino."
+      />
+      <CardMenu
+        slot="specials"
+        title="Napolitana"
+        price="13.00"
+        price="24.00"
+        route="/src/assets/pizzas/pizzamaericana.jpg"
+        altImg="Napolitana"
+        description="Queso Mozarella, Salsa, Jamón, Cebolla Blanca, Rojadas de Tomate, Salsa Especial."
+      />
+      <CardMenu
+        slot="specials"
+        title="Super Hawaiana"
+        price="16.00"
+        price="30.00"
+        route="/src/assets/pizzas/pizzamaericana.jpg"
+        altImg="SuperHawaiana"
+        description="Queso Mozarella, Salsa, Jamón, Trozos de Piña, Gajos de Durazno, Doble Queso."
+      />
+      <CardMenu
+        slot="specials"
+        title="Hawaiana"
+        price="14.00"
+        price="26.00"
+        route="/src/assets/pizzas/pizzamaericana.jpg"
+        altImg="Hawaiana"
+        description="Queso Mozarella, Salsa, Jamón, Trozos de Piña."
+      />
+      <CardMenu
+        slot="specials"
+        title="Caribeña"
+        price="16.00"
+        price="30.00"
+        route="/src/assets/pizzas/pizzamaericana.jpg"
+        altImg="Caribeña"
+        description="Queso Mozarella, Salsa, Jamón, Salame, Trozos de Piña, Doble Queso."
+      />
+      <CardMenu
+        slot="specials"
+        title="Vegetariana"
+        price="14.00"
+        price="26.00"
+        route="/src/assets/pizzas/pizzamaericana.jpg"
+        altImg="Vegetariana"
+        description="Queso Mozarella, Salsa, Champiñones, Aceitunas, Cebolla Blanca."
+      />
+    </LayoutCards>
+  </main>
+</LayoutIndex>
+
+<style>
+  main {
+    padding: 0rem 1rem;
+  }
+</style>

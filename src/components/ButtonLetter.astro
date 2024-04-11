@@ -1,0 +1,63 @@
+---
+console.log("asd")
+---
+
+<a href="/menuLoloBelo">
+  Ver carta
+  
+  <svg 
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <path d="M5 12l14 0" />
+    <path d="M13 18l6 -6" />
+    <path d="M13 6l6 6" />
+  </svg>
+</a>
+
+<style>
+  :root {
+    --color-primary: #ea3333
+  }
+  
+  a {
+    background-color: transparent;
+    border: 3px solid var(--color-primary);
+    border-radius: 1rem;
+    width: 12rem;
+    height: 4rem;
+    
+    font-size: 1.5em;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: ease-out 0.4s;
+    box-shadow: inset 0 0 0 0 var(--color-primary);
+    &:hover {
+      color: white;
+      box-shadow: inset 0 -100px 0 0 var(--color-primary);
+      transform: translateY(-5px);
+    }
+    &:active {
+      transform: scale(0.9);
+      transform: translateY(5px);
+    }
+
+    & svg {
+      width: auto;
+      margin-left: 0.5rem;
+      margin-bottom: 3px;
+    }
+  }
+</style>

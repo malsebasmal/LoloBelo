@@ -1,0 +1,57 @@
+---
+import TitleCard from "../components/TitleCards.astro";
+---
+<div>
+  <TitleCard title="Recomendadas" />
+  <section class="recommending">
+    <slot name="recommending" />
+  </section>
+</div>
+
+<div>
+  <TitleCard title="Clásicas" />
+  <section class="classic">
+    <slot name="classic" />
+  </section>
+</div>
+
+<div>
+  <TitleCard title="Especiales" />
+  <section class="specials">
+    <slot name="specials" />
+  </section>
+</div>
+
+<style>
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 1.5rem;
+    
+    &:nth-child(2) {
+      margin-top: 5rem;
+    }
+
+    &:nth-child(3) {
+      margin-top: 5rem;
+      margin-bottom: 3rem;
+    }
+  }
+  section {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .specials {
+    margin-top: 0.5rem;
+  }
+
+</style>

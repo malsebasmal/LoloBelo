@@ -1,0 +1,65 @@
+---
+import LayoutIndex from '../layouts/LayoutIndex.astro';
+import ButtonLetter from '../components/ButtonLetter.astro';
+import ContainerPresentation from '../layouts/ContainerPresentation.astro';
+---
+
+<LayoutIndex title="LoloBelo">
+	<main>
+		<ContainerPresentation>
+			<div>
+				<h1>
+					Bienvenido a
+				</h1>
+				<img src="/src/assets/logoLoloBelo.webp" alt="Logo LoloBelo">
+			</div>
+			<ButtonLetter />
+		</ContainerPresentation>
+	</main>
+</LayoutIndex>
+
+<style>
+	:root {
+    --color-primary: #ea3333
+  }
+	main {
+		width: 100vw;
+		height: 100vh;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		h1 {
+			padding: 0rem 1rem;
+			font-size: clamp(4em, 15vw, 6em);
+		}
+		img{
+			margin-top: clamp(3rem, 15vw, 5rem);
+			width: 30rem;
+			width: clamp(15rem, 40vw, 30rem);
+			animation: flicker 2s infinite alternate;
+			filter: brightness(150%) contrast(200%) hue-rotate(30deg) saturate(150%);
+		}
+	}
+	@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+		filter: drop-shadow(0px 0px 4px #990000);
+    filter: drop-shadow(0px 0px 6px #ff0000);
+    filter: drop-shadow(0px 0px 12px #ff0000);
+    filter: drop-shadow(0px 0px 14px #ff0000);
+    filter: drop-shadow(0px 0px 16px #ff0000);
+    filter: drop-shadow(0px 0px 20px #ff0000);
+    }
+    20%, 24%, 55% {        
+        filter: none;
+    }    
+	}
+
+
+</style>

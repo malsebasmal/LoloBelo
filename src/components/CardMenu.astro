@@ -1,0 +1,68 @@
+---
+interface Props {
+  title: String;
+  description: String;
+  price: String;
+  route: String;
+  altImg: String;
+}
+
+const { route, title, description, price, altImg } = Astro.props;
+---
+
+<div class="container">
+  <h2>{title}</h2>
+  <div class="prices">
+    <span>S/.{price}</span>
+    <span>S/.{price}</span>
+  </div>
+  <img src={route} alt={altImg} />
+  <p>{description}</p>
+</div>
+
+<style>
+  .container {
+    background-color: #ffffff;
+
+    width: clamp(10rem, 40vw, 18rem);
+    height: auto;
+    max-height: 25rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+    
+    padding: 1rem;
+    
+    border: 1px solid #0000001f;
+    box-shadow: #ea33334e 0px 4px 8px -1px;
+    h2{
+      font-size: clamp(1.5em, 6vw, 2em);
+      line-height: 1.7rem;
+      text-wrap: balance;
+
+      background-image: linear-gradient(45deg, #fee438 0%, #ea3333 74%);
+      text-shadow: 0px 4px 8px #ea33334e;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+    }
+  }
+  .prices {
+    display: flex;
+    gap: 1.5rem;
+
+    span {
+        font-size: clamp(1em, 4vw,1.5em);
+    }
+  }
+  img {
+    width: 100%;
+    border-radius: 5%;
+  }
+  p {
+    font-size: clamp(0.8em, 3vw, 1em);
+    letter-spacing: 0.5px;
+    text-wrap: balance;
+  }
+</style>
