@@ -24,7 +24,7 @@ const { route, title, description, price, altImg } = Astro.props;
   .container {
     background-color: #ffffff;
 
-    width: clamp(10rem, 40vw, 18rem);
+    width: clamp(9rem, 40vw, 18rem);
     height: auto;
     max-height: 25rem;
 
@@ -63,6 +63,13 @@ const { route, title, description, price, altImg } = Astro.props;
   p {
     font-size: clamp(0.8em, 3vw, 1em);
     letter-spacing: 0.5px;
+    line-height: 1.4em;
     text-wrap: balance;
+  }
+
+  @media (width <= 400px) {
+    p {
+      line-height: 1.2em;
+    }
   }
 </style>
