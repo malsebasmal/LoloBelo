@@ -1,20 +1,21 @@
 ---
 interface Props {
-  title: String;
-  description: String;
-  price: String;
+  title: string;
+  description: string;
+  priceOne: string;
+  priceSecond: string;
   route: string;
   altImg: string;
 }
 
-const { route, title, description, price, altImg } = Astro.props;
+const { route, title, description, priceOne, priceSecond, altImg } = Astro.props;
 ---
 
 <div class="container">
   <h2>{title}</h2>
   <div class="prices">
-    <span>S/.{price}</span>
-    <span>S/.{price}</span>
+    <span>S/.{priceOne}</span>
+    <span>S/.{priceSecond}</span>
   </div>
   <img src={route} alt={altImg} />
   <p>{description}</p>
@@ -26,7 +27,7 @@ const { route, title, description, price, altImg } = Astro.props;
 
     width: clamp(9rem, 40vw, 18rem);
     height: auto;
-    max-height: 25rem;
+    max-height: 30rem;
 
     display: flex;
     flex-direction: column;
